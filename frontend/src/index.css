@@ -1,0 +1,90 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  padding: 20px;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+.container.light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Dark Theme */
+.container.dark {
+  background: #121212;
+  color: #f4f4f4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-toggle {
+
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50% ;
+  background: #008cba;
+  color: white;
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 7px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background: #008cba;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.card {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.container.light .card {
+  background: white;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.error {
+  color: red;
+}

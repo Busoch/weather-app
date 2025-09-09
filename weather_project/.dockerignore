@@ -1,0 +1,23 @@
+# Python cache & virtual envs
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# SQLite DB (if using SQLite in dev)
+*.sqlite3
+
+# Git & Docker files
+.git
+.gitignore
+Dockerfile
+.dockerignore
+
+# Local env & configs
+.env
+*.log
+
+# Media/uploads (optional, if you use persistent volumes instead)
+media/
